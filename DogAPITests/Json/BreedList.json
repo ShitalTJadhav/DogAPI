@@ -1,0 +1,198 @@
+{
+    "status":"success",
+    "message":{
+        "affenpinscher":[
+        ],
+        "african":[
+        ],
+        "brabancon":[
+            
+        ],
+        "briard":[
+            
+        ],
+        "bulldog":[
+            "boston",
+            "french"
+        ],
+        "bullterrier":[
+            "staffordshire"
+        ],
+        "cairn":[
+            
+        ],
+        "cattledog":[
+            "australian"
+        ],
+        "chihuahua":[
+            
+        ],
+        "chow":[
+            
+        ],
+        "corgi":[
+            "cardigan"
+        ],
+        "cotondetulear":[
+            
+        ],
+        "dachshund":[
+            
+        ],
+        "dalmatian":[
+            
+        ],
+        "dane":[
+            "great"
+        ],
+        "deerhound":[
+            "scottish"
+        ],
+        "dhole":[
+            
+        ],
+        "dingo":[
+            
+        ],
+        "entlebucher":[
+            
+        ],
+        "eskimo":[
+            
+        ],
+        "hound":[
+            "afghan",
+            "basset",
+            "blood",
+            "english",
+            "ibizan",
+            "walker"
+        ],
+        "husky":[
+            
+        ],
+        "keeshond":[
+            
+        ],
+        "mastiff":[
+            "bull",
+            "english",
+            "tibetan"
+        ],
+        "mexicanhairless":[
+            
+        ],
+        "mix":[
+            
+        ],
+        "mountain":[
+            "bernese",
+            "swiss"
+        ],
+        "pembroke":[
+            
+        ],
+        "pinscher":[
+            "miniature"
+        ],
+        "pointer":[
+            "german",
+            "germanlonghair"
+        ],
+        "pomeranian":[
+            
+        ],
+        "poodle":[
+            "miniature",
+            "standard",
+            "toy"
+        ],
+        "pug":[
+            
+        ],
+        "redbone":[
+            
+        ],
+        "retriever":[
+            "chesapeake",
+            "curly",
+            "flatcoated",
+            "golden"
+        ],
+        "ridgeback":[
+            "rhodesian"
+        ],
+        "rottweiler":[
+            
+        ],
+        "schnauzer":[
+            "giant",
+            "miniature"
+        ],
+        "setter":[
+            "english",
+            "gordon",
+            "irish"
+        ],
+        "sheepdog":[
+            "english",
+            "shetland"
+        ],
+        "shiba":[
+            
+        ],
+        "shihtzu":[
+            
+        ],
+        "spaniel":[
+            "blenheim",
+            "brittany",
+            "cocker",
+            "irish",
+            "japanese",
+            "sussex",
+            "welsh"
+        ],
+        "springer":[
+            "english"
+        ],
+        "stbernard":[
+            
+        ],
+        "terrier":[
+            "american",
+            "australian",
+            "bedlington",
+            "border",
+            "dandie",
+            "fox",
+            "irish",
+            "kerryblue",
+            "lakeland",
+            "norfolk",
+            "norwich",
+            "patterdale",
+            "russell",
+            "scottish",
+            "sealyham",
+            "silky",
+            "tibetan",
+            "toy",
+            "westhighland",
+            "wheaten",
+            "yorkshire"
+        ],
+        "vizsla":[
+            
+        ],
+        "weimaraner":[
+            
+        ],
+        "whippet":[
+            
+        ],
+        "wolfhound":[
+            "irish"
+        ]
+    }
+}

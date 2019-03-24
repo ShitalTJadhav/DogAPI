@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Breed" representedClassName="Breed" syncable="YES" codeGenerationType="class">
+        <attribute name="breedname" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="subbreed" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="SubBreed" inverseName="breedType" inverseEntity="SubBreed" syncable="YES"/>
+    </entity>
+    <entity name="BreedImage" representedClassName="BreedImage" syncable="YES" codeGenerationType="class">
+        <attribute name="breedImageData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="breedType" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="subbreedType" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="breedtype" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Breed" syncable="YES"/>
+    </entity>
+    <entity name="SubBreed" representedClassName="SubBreed" syncable="YES" codeGenerationType="class">
+        <attribute name="subBreedname" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="breedType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Breed" inverseName="subbreed" inverseEntity="Breed" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Breed" positionX="-451.2421875" positionY="-4.30078125" width="128" height="73"/>
+        <element name="BreedImage" positionX="-240.11328125" positionY="-44.91796875" width="128" height="118"/>
+        <element name="SubBreed" positionX="-284.31640625" positionY="171.12109375" width="128" height="73"/>
+    </elements>
+</model>

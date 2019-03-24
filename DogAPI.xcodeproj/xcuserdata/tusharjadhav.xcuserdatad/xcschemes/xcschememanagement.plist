@@ -7,7 +7,25 @@
 		<key>DogAPI.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>0</integer>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>53BC9A292240E4D800C6BBBE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>53BC9A402240E4DA00C6BBBE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>53BC9A4B2240E4DB00C6BBBE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

@@ -11,6 +11,29 @@ import UIKit
 class BreedListViewCell: UICollectionViewCell {
     
     @IBOutlet weak var breedNameLabel: UILabel!
-    @IBOutlet weak var breedImageView: UIImageView!
+
+
+    var model: Breed? {
+        didSet {
+            guard let model = model else {
+                return
+            }
+            breedNameLabel.text = model.breedname
+                        
+            //Show cell background color
+            if self.tag % 2 == 0 {
+                self.backgroundColor = ColorPalette.appDarkColor
+            }
+            else {
+                self.backgroundColor = ColorPalette.applightColor
+                
+            }
+        }
+    }
     
+    override func awakeFromNib() {
+        self.layoutIfNeeded()
+
+        
+    }
 }

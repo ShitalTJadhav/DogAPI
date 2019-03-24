@@ -9,11 +9,6 @@
 import Foundation
 
 protocol NetworkingProtocol {
-    
-    /// Fetch data from url and parameters query
-    /// - Parameters:
-    ///   - parameters: Parameters as query items
-    ///   - completion: Called when operation finishes
     func fetchData(resource: Resource, completion: @escaping(AnyObject?, DataResponseError?) -> Void)
 }
 
@@ -23,7 +18,7 @@ class NetworkService : NetworkingProtocol {
     private let session: URLSession!
     
     lazy var baseURL: URL = {
-        return URL(string: "https://dog.ceo/api/breeds/")!
+        return URL(string: "https://dog.ceo/api/")!
     }()
     
     public static let shared = NetworkService()
@@ -32,7 +27,6 @@ class NetworkService : NetworkingProtocol {
         self.session = URLSession(configuration: configuration)
     }
     
-//    func fetch(resource: Resource, completion: @escaping (Data?) -> Void) {
     func fetchData(resource: Resource, completion: @escaping(AnyObject?,DataResponseError?) -> Void) {
         
         //Check internet connection
@@ -64,11 +58,10 @@ class NetworkService : NetworkingProtocol {
             //Convert data to json object
             do {
                 let jsonObject = try JSONSerialization.jsonObject(with: data, options: [])
-                guard let jsonDictionary = jsonObject as? AnyObject else {
+                if ((jsonObject as? NSNull) != nil)  {
                     throw DataResponseError.decoding
                 }
-                print("Json Data : ",jsonDictionary)
-                completion(jsonDictionary, nil)
+                completion(jsonObject as AnyObject, nil)
             } catch {
                 completion(nil, DataResponseError.custom(error.localizedDescription))
             }
@@ -78,13 +71,9 @@ class NetworkService : NetworkingProtocol {
     }
     
     /// Convenient method to make request
-    ///
-    /// - Parameters:
-    ///   - resource: Network resource
-    /// - Returns: Constructed URL request
     private func makeRequest(resource: Resource) -> URLRequest? {
-        //let escapedPath = resource.path?.addingPercentEncoding(withAllowedCharacters:NSCharacterSet.urlHostAllowed)
-        let url = resource.path.map({ resource.url.appendingPathComponent($0) }) ?? resource.url
+        //let url = resource.path.map({ resource.url.appendingPathComponent($0) }) ?? resource.url
+        let url = resource.url.appendingPathComponent(resource.path ?? "")
         
         guard var component = URLComponents(url: url , resolvingAgainstBaseURL: true) else {
             assertionFailure()
