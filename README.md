@@ -28,4 +28,5 @@ In this project I have create breed list and breed photo gallery using MVVM arch
    **BreedListUITest** : Testing breed list and search breed and navigation.
    
  #### Screen Shot 
-  <img src="" width="200" height="400" />
+  <img src="https://github.com/ShitalTJadhav/DogAPI/blob/master/ScreenShot/Simulator%20Screen%20Shot%20-%20iPhone%20X%20-%202019-03-24%20at%2017.55.35.png" width="200" height="400" />  <img src="https://github.com/ShitalTJadhav/DogAPI/blob/master/ScreenShot/Simulator%20Screen%20Shot%20-%20iPhone%20X%20-%202019-03-24%20at%2017.57.15.png" width="200" height="400" />
+
