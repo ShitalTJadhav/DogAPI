@@ -10,20 +10,6 @@ import UIKit
 import CoreData
 
 class StorageManager {
-    
-//    static let shared = StorageManager()
-//    private init() {} // Prevent clients from creating another instance.
-    
-//    //MARK: Init with dependency
-//    lazy var persistentContainer: NSPersistentContainer = {
-//        //Use the default container for production environment
-//        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {
-//            fatalError("AppDelegate unavailable")
-//        }
-//        let container : NSPersistentContainer = appDelegate.persistentContainer
-//        container.viewContext.automaticallyMergesChangesFromParent = true
-//        return container
-//    }()
 
     let persistentContainer: NSPersistentContainer!
     
